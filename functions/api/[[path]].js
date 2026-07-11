@@ -1,7 +1,7 @@
 export async function onRequest(context) {
   const request = context.request;
   const url = new URL(request.url);
-  url.hostname = "regruha-terminal-core.base44.app";
+  url.hostname = "r-chat.base44.app";
 
   const res = await fetch(url.toString(), {
     method: request.method,
